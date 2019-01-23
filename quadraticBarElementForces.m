@@ -3,4 +3,4 @@ function y = quadraticBarElementForces(k,u)
 %                               force vector given the elemenet stiffness
 %                               matrix k and the element nodal displacement
 %                               vector u.
-y = k * u;                      
+y = k * u;
