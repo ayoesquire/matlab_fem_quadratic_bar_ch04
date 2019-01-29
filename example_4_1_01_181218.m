@@ -115,8 +115,8 @@ count = 0;
 
 for i = 1:length(U)
     val = input(['Enter value of Global Displcmt., U(',num2str(i),')'...
-        ' if known, or simply press "Enter" if unknown: ']);
-    if isempty(val)     % Track Unknown variables
+        ' if known, or simply skip by pressing "Enter" if unknown: ']);
+    if isempty(val)     % Track Unknown U variables
         UUnknown(i) = i;
     else
         U(i) = val;
@@ -125,7 +125,7 @@ end
 for i = 1:length(F)
     val = input(['Enter value of Global Force, F(',num2str(i),')'...
         ' if known, or simply press "Enter" if unknown: ']);
-    if isempty(val)
+    if isempty(val)     % Track Unknown F variables
         FUnknown(i) = i;
         count = count + 1;
     else
